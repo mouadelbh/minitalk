@@ -13,29 +13,41 @@ Minitalk is a simple client-server communication system implemented in C, utiliz
 
 ### Compilation Commands
 
-'''bash
+```bash
 make
+```
 The make command compiles both the server and client programs. The libftprintf library is assumed to be available in the ./ft_printf/ directory.
 
 Execution
-Server
-'''bash
+#Server
+```bash
 ./server
+```
 The server program listens for incoming signals from the client and prints the received strings to the console.
 
-Client
-'''bash
+#Client
+```bash
 ./client [SERVER_PID] "Hello, Server!"
+```
 Replace [SERVER_PID] with the PID of the running server process.
 Replace [STRING] with the string you want to send to the server.
-Example
-'''bash
+##Example
 Open two terminal windows.
 In the first window, run the server:
+```bash
 ./server
+7896
+```
 In the second window, run the client:
-./client [SERVER_PID] "Hello, Server!"
-Replace [SERVER_PID] with the actual PID displayed by the server.
+```bash
+./client 7896 "is this a jojo reference"
+```
+And now the string will be printed in the first terminal window
+```
+./server
+7896
+is this a jojo reference
+```
 
 Notes
 The server prints the received strings to the console.
