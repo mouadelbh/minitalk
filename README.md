@@ -18,8 +18,8 @@ make
 ```
 The make command compiles both the server and client programs. The libftprintf library is assumed to be available in the ./ft_printf/ directory.
 
-Execution
-#Server
+##Execution
+Server
 ```bash
 ./server
 ```
