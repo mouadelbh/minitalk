@@ -19,13 +19,13 @@ make
 The make command compiles both the server and client programs. The libftprintf library is assumed to be available in the ./ft_printf/ directory.
 
 ## Execution
-# Server
+### Server
 ```bash
 ./server
 ```
 The server program listens for incoming signals from the client and prints the received strings to the console.
 
-# Client
+### Client
 ```bash
 ./client [SERVER_PID] "Hello, Server!"
 ```
