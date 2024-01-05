@@ -18,20 +18,20 @@ make
 ```
 The make command compiles both the server and client programs. The libftprintf library is assumed to be available in the ./ft_printf/ directory.
 
-##Execution
-Server
+## Execution
+# Server
 ```bash
 ./server
 ```
 The server program listens for incoming signals from the client and prints the received strings to the console.
 
-#Client
+# Client
 ```bash
 ./client [SERVER_PID] "Hello, Server!"
 ```
 Replace [SERVER_PID] with the PID of the running server process.
 Replace [STRING] with the string you want to send to the server.
-##Example
+## Example
 Open two terminal windows.
 In the first window, run the server:
 ```bash
@@ -49,7 +49,7 @@ And now the string will be printed in the first terminal window
 is this a jojo reference
 ```
 
-Notes
+## Notes
 The server prints the received strings to the console.
 The client sends strings to the server using Unix signals (SIGUSR1 and SIGUSR2).
 The code includes a simple signal handler and byte-to-char conversion for data processing.
